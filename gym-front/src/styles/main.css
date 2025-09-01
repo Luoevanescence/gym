@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family: 'Alimama-FangYuan';
+    src:url('https://cdn.jsdelivr.net/gh/Luoevanescence/static@main/nopeople-gym/fonts/AlimamaFangYuanTiVF/AlimamaFangYuanTiVF-Thin.ttf')format('truetype');
+}
+
+/* 控制 tabBar 图标大小 */
+.tabbar-item icon {
+  width: 12px;
+  /* 根据需求调整宽度 */
+  height: 12px;
+  /* 根据需求调整高度 */
+}
+
+/* #ifdef MP-WEIXIN */
+.tabbar-item {
+  font-size: 16px;
+}
+/* #endif */
+
+/* 应用字体 */
+* {
+  font-family: 'Alimama-FangYuan', sans-serif;
+}
+
+:root {
+  --color-grey: #bcbaba;
+}
+
+.color-grey {
+  color: var(--color-grey);
+}
+
+.letter-spacing-6 {
+  letter-spacing: 6px;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.tab-bar-height {
+  height: calc(100rpx + env(safe-area-inset-bottom));
+}
+/* 滚动条 */
+.css-scroll-container {
+	width: 100%;
+	height: 100%;
+	/* 必须指定高度 */
+	overflow-y: auto;
+	/* 纵向滚动 */
+	scroll-snap-type: y mandatory;
+	/* 吸附滚动 */
+	scroll-behavior: smooth;
+}
+
+.css-scroll-container {
+	width: 100%;
+	height: 100%;
+	/* 必须指定高度 */
+	overflow-y: auto;
+	/* 纵向滚动 */
+	scroll-snap-type: y proximity;
+	/* 可选：滚动吸附 */
+	scroll-behavior: smooth;
+	/* 平滑滚动 */
+}
+
+/* 移动端优化：弹性滚动（iOS 效果） */
+.css-scroll-container {
+	-webkit-overflow-scrolling: touch;
+	/* 开启弹性滚动 */
+}
+
+.css-scroll-container::-webkit-scrollbar {
+	display: none;
+}
+
+.css-scroll-container::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}

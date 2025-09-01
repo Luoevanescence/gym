@@ -1,0 +1,157 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^van-(.*)": "@vant/weapp/dist/$1/index"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents", //按需注入和用时注入
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index", // 首页
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundTextStyle": "dark", // 导航栏标题文字颜色只有 "light" or "dark"
+        "navigationBarTitleText": "首页" //导航栏标题文字内容
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationStyle": "custom", // 自定义导航栏，隐藏默认导航栏
+        "backgroundTextStyle": "dark",
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/member/member",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "会员"
+      }
+    },
+    {
+      "path": "pages/store/store",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "门店"
+      }
+    },
+    {
+      "path": "pages/recognition/recognition",
+      "style": {
+        "navigationBarTitleText": "人脸识别"
+      }
+    },
+    {
+      "path": "pages/qrcode/qrcode",
+      "style": {
+        "navigationBarTitleText": "二维码"
+      }
+    },
+    {
+      "path": "pages/scan/scan",
+      "style": {
+        "navigationBarTitleText": "扫码"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        // "navigationStyle": "custom",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/profile/records/records",
+      "style": {
+        "navigationBarTitleText": "进场记录"
+      }
+    },
+    {
+      "path": "pages/profile/orders/orders",
+      "style": {
+        "navigationBarTitleText": "订单记录"
+      }
+    },
+    {
+      "path": "pages/profile/repair/repair",
+      "style": {
+        "navigationBarTitleText": "机械报修"
+      }
+    },
+    {
+      "path": "pages/profile/help/help",
+      "style": {
+        "navigationBarTitleText": "使用帮助"
+      }
+    },
+    {
+      "path": "pages/profile/feedback/feedback",
+      "style": {
+        "navigationBarTitleText": "意见反馈"
+      }
+    },
+    {
+      "path": "pages/profile/personal/personal",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    },
+    {
+      "path": "pages/member/carddetails/card-detail",
+      "style": {
+        "navigationBarTitleText": "会员卡详情"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black", // 导航栏标题文字颜色只有 "black" 或 "white"
+    "navigationBarTitleText": "无人健身房小程序", //导航栏标题文字内容
+    "navigationBarBackgroundColor": "#ffeede", //导航栏背景颜色
+    "backgroundColor": "#0bffcf" //窗口的背景色
+  },
+  //tab栏
+  "tabBar": {
+    "custom": true,
+    "selectedColor": "#ffeddb", //tab选中时的文字颜色
+    "color": "#7A7E83", //tab未选中时的文字颜色
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index"
+        // "iconPath": "/static/tabs/home_default.png",
+        // "selectedIconPath": "/static/tabs/home_selected.png"
+      },
+      {
+        "text": "会员",
+        "pagePath": "pages/member/member"
+        // "iconPath": "/static/tabs/member__default.png",
+        // "selectedIconPath": "/static/tabs/member_selected.png"
+      },
+      {
+        "text": "门店",
+        "pagePath": "pages/store/store"
+        // "iconPath": "/static/tabs/store_default.png",
+        // "selectedIconPath": "/static/tabs/store_selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/profile"
+        // "iconPath": "/static/tabs/profile_default.png",
+        // "selectedIconPath": "/static/tabs/profile_selected.png"
+      }
+    ]
+  },
+  "uniIdRouter": {},
+  "subPackages": []
+}
